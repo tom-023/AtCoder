@@ -49,7 +49,7 @@ package main
 
 import "fmt"
 
-func main() {
+func test124() {
 	var a, b int
 	fmt.Scanf("%d %d", &a, &b)
 	fmt.Println(a | b) // 論理和によるビット演算
