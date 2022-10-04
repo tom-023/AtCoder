@@ -45,7 +45,7 @@ package main
 
 import "fmt"
 
-func anyway() {
+func anywayTakahashi() {
 	var a, b, c, d int
 	fmt.Scanf("%d %d %d %d", &a, &b, &c, &d)
 	fmt.Println((a + b) * (c - d))

@@ -2,7 +2,8 @@ package main
 
 func main() {
 	// test124()
-	// anyway()
+	// anywayTakahashi()
 	// fiveIntergers()
-	saturday()
+	// saturday()
+	middleLetter()
 }
