@@ -114,6 +114,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+
+	"github.com/tom-023/AtCoder/module"
 )
 
 var scanner = bufio.NewScanner(os.Stdin)
@@ -137,29 +139,13 @@ func rectangleDetection() {
 	for i, array := range f {
 		for j, uni := range array {
 			if uni == '#' {
-				a = min(a, i+1)
-				b = max(b, i+1)
-				c = min(c, j+1)
-				d = max(d, j+1)
+				a = module.Min(a, i+1)
+				b = module.Max(b, i+1)
+				c = module.Min(c, j+1)
+				d = module.Max(d, j+1)
 			}
 		}
 	}
 	fmt.Printf("%d %d\n", a, b)
 	fmt.Printf("%d %d", c, d)
-}
-
-func min(a, b int) int {
-	if a > b {
-		return b
-	} else {
-		return a
-	}
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	} else {
-		return b
-	}
 }

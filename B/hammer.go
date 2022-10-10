@@ -44,9 +44,10 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"math/rand"
 	"time"
+
+	"github.com/tom-023/AtCoder/module"
 )
 
 func hammer() {
@@ -71,7 +72,7 @@ func hammer() {
 	}
 
 	if x < y {
-		fmt.Print(abs(x))
+		fmt.Print(module.Abs(x))
 	} else {
 		if z > y {
 			fmt.Print(-1)
@@ -82,9 +83,9 @@ func hammer() {
 }
 
 func calculate(x, z int) int {
-	return abs(z) + abs(x-z)
+	return module.Abs(z) + module.Abs(x-z)
 }
 
-func abs(i int) int {
-	return int(math.Abs(float64(i)))
-}
+// func abs(i int) int {
+// 	return int(math.Abs(float64(i)))
+// }
