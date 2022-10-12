@@ -3,5 +3,6 @@ package main
 func main() {
 	// hammer()
 	// rectangleDetection()
-	niceGrid()
+	// niceGrid()
+	tournamentResult()
 }
