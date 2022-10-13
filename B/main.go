@@ -4,5 +4,6 @@ func main() {
 	// hammer()
 	// rectangleDetection()
 	// niceGrid()
-	tournamentResult()
+	// tournamentResult()
+	explore()
 }
